@@ -75,7 +75,7 @@ nav button:hover {
   background: #4b2618;
 }
 .banner {
-  padding: 80px 40px;
+  padding: 40px 40px;
   background: url("../images/image21.jpg") no-repeat center/cover;
   color:rgb(6, 72, 73);
   border-radius: 0px;
@@ -87,11 +87,10 @@ nav button:hover {
   max-width: 800px;
 }
 .banner h4 {
-  padding: 10px 100px;
-  text-align: center;
+  padding: 5px 10px;
   font-weight: 300;
   margin-bottom: 25px;
-  width: 800px;
+ width: 100%;
 }
 .banner .btn1 input {
   border: 2px solid rgb(4, 96, 65);
@@ -347,7 +346,7 @@ box-shadow: 0px 0px 5px yellow;
   color: #6b3e26;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   nav ul {
     display: none;
   }
@@ -367,6 +366,7 @@ box-shadow: 0px 0px 5px yellow;
   .banner .btn1 input {
     padding: 10px 15px;
     font-size: 0.9rem;
+    max-width: 300px;
   }
 
   .about h3 {
@@ -374,17 +374,19 @@ box-shadow: 0px 0px 5px yellow;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .banner {
-    padding: 60px 15px;
+    padding: 30px 10px;
   }
 
   .banner h1 {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
   .banner h4 {
-    font-size: 0.85rem;
+    flex-direction: column;
+    max-width: 360px;
+    font-size: 12px;
   }
 
   nav button {
@@ -398,6 +400,7 @@ box-shadow: 0px 0px 5px yellow;
 }
 .contact-section {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -424,6 +427,7 @@ margin-bottom: 100px;
 .form-group {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
 }
 
 label {
