@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-/* Google Fonts already linked: Poppins */
 * {
   margin: 0;
   padding: 0;
@@ -13,16 +12,12 @@ body {
   line-height: 1.6;
   width: 100%;
 }
-
-/* Container */
 .container {
   width: 100%;
   margin: auto;
   padding: 0 20px;
   background: linear-gradient(135deg,rgb(1, 1, 21),black);
 }
-
-/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -79,28 +74,22 @@ nav button {
 nav button:hover {
   background: #4b2618;
 }
-
-/* Banner */
 .banner {
-  
   padding: 80px 40px;
   background: url("../images/bgi.png") no-repeat center/cover;
   color:rgb(161, 157, 168);
   border-radius: 0px;
 }
-
 .banner h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
   color: #de5805;
 }
-
 .banner h4 {
   font-weight: 300;
   margin-bottom: 25px;
   max-width: 800px;
 }
-
 .banner .btn1 input {
   border: 2px solid rgb(4, 96, 65);
   background-color: #080225;
@@ -117,8 +106,6 @@ nav button:hover {
 .banner .btn1 input:hover {
   background: #4b2618;
 }
-
-/* About */
 .about {
   padding: 60px 20px;
   text-align: center;
@@ -136,7 +123,6 @@ box-shadow: 0px 0px 5px yellow;
   margin-bottom: 15px;
   color: #c62611;
 }
-
 .about h3 {
   font-weight: 400;
   color: #555;
@@ -144,25 +130,20 @@ box-shadow: 0px 0px 5px yellow;
   margin: auto;
   line-height: 1.8;
 }
-
-/* Menu Section */
 .Menu {
   padding: 60px 20px;
   text-align: center;
 }
-
 .Menu h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: #d61f1fea;
 }
-
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
-
 .menu-item {
   background: #040316;
   border-radius: 12px;
@@ -170,7 +151,6 @@ box-shadow: 0px 0px 5px yellow;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .menu-item img {
   width: 100%;
   height: 180px;
@@ -178,17 +158,13 @@ box-shadow: 0px 0px 5px yellow;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-
-/* Pop-up effect */
 .menu-item:hover {
   transform: translateY(-8px);
   box-shadow: 0px 12px 20px rgba(0,0,0,0.25);
 }
-
 .menu-item:hover img {
   transform: scale(1.1);
 }
-
 .menu-item h3 {
   margin: 15px 0 8px;
   font-size: 20px;
@@ -206,21 +182,15 @@ box-shadow: 0px 0px 5px yellow;
   font-weight: bold;
   color: #2de199;
 }
-
-/* Hide default checkbox */
 #menu-toggle {
   display: none;
 }
-
-/* Hamburger icon */
 .menu-icon {
   display: none;
   font-size: 1.6rem;
   cursor: pointer;
   color: #6b3e26;
 }
-
-/* Mobile Nav */
 @media (max-width: 768px) {
   nav ul {
     display: flex;
@@ -245,25 +215,17 @@ box-shadow: 0px 0px 5px yellow;
     width: 100%;
     text-align: center;
   }
-
-  /* Show menu when checked */
   #menu-toggle:checked ~ ul {
     display: flex;
   }
-
-  /* Show hamburger icon */
   .menu-icon {
     display: block;
   }
-
-  /* Hide search & button on small screens if you want */
   nav .btn {
     display: none;
   }
 }
 
-
-/* Services */
 .services {
   padding: 60px 20px;
   text-align: center;
@@ -311,7 +273,6 @@ box-shadow: 0px 0px 5px yellow;
   color: #6b3e26;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -431,7 +392,6 @@ textarea {
   background: #574fd6;
 }
 
-/* Responsive for mobile */
 @media (max-width: 780px) {
   .contact-section {
     flex-direction: column;
