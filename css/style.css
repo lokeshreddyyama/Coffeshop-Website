@@ -76,31 +76,35 @@ nav button:hover {
 }
 .banner {
   padding: 80px 40px;
-  background: url("../images/bgi.png") no-repeat center/cover;
-  color:rgb(161, 157, 168);
+  background: url("../images/image21.jpg") no-repeat center/cover;
+  color:rgb(6, 72, 73);
   border-radius: 0px;
 }
 .banner h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
   color: #de5805;
+  max-width: 800px;
 }
 .banner h4 {
+  padding: 10px 100px;
+  text-align: center;
   font-weight: 300;
   margin-bottom: 25px;
-  max-width: 800px;
+  width: 800px;
 }
 .banner .btn1 input {
   border: 2px solid rgb(4, 96, 65);
   background-color: #080225;
   color: white;
-  padding: 12px;
+  padding: 12px 50px;
   border-radius: 10px;
   font-size: 1rem;
   margin: 5px;
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0px 0px 5px yellow;
+  width: 350px;
 }
 
 .banner .btn1 input:hover {
