@@ -295,6 +295,29 @@ nav ul li a:hover {
   margin: 15px 0 10px;
   color: #3e2723;
 }
+.visit {
+  background: #f9f8f6;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.visit h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.visit-info {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.visit-info div h4 {
+  font-size: 1.2rem;
+  color: #482e1b;
+  margin-bottom: 0.3rem;
+}
 
 .contact {
   text-align: center;
