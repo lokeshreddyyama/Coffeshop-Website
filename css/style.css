@@ -343,6 +343,17 @@ nav ul li a:hover {
   text-align: center;
 margin-bottom: 100px;
 }
+.social a {
+  margin: 10px;
+  color: #07c0d8;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  border-radius: 50%;
+}
+
+.social a:hover {
+  color: #2575fc;
+}
 
 .contact-section form {
   display: flex;
