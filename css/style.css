@@ -370,60 +370,95 @@ nav ul li a:hover {
 }
 
 /*Contact Section*/
-.contact h2 {
-    padding: 10px;
-   margin-bottom: 15px;
-  font-size: 40px;
-  color: #361d19;
-   margin-left: 180px;
-}
-.contact form {
-  max-width: 600px;
-  margin: auto;
-}
-.form-group {
-  margin-bottom: 18px;
-}
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-  text-align: left;
-  color: white;
-}
-input, textarea {
+.contact {
   width: 100%;
-  padding: 12px 14px;
-  font-size: 16px;
-  border-radius: 6px;
-  border: 1px solid #77e88c;
-  background-color: #f7f6f9;
-  resize: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 8px;
+   background: #0d0a01;
 }
-.paragraph {
-  max-width: 300px;
+
+#contact {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #0002;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact h2 {
   text-align: center;
-margin-bottom: 20px;
-color: white;
-margin-left: 150px;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
 }
-input:focus, textarea:focus {
-  outline: 2px solid #232946;
+
+.paragraph p {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
 }
-.submit-btn {
-  background-color: #77e88c;
-  color: #f2ebeb;
-  cursor: pointer;
-  border: none;
-  font-weight: 700;
-  padding: 14px 28px;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #bbb;
   border-radius: 6px;
-  transition: background-color 0.2s;
-  margin-left: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border 0.2s;
 }
-.submit-btn:hover {
-  background-color: #3f2d40;
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1.5px solid #0092e0;
+  outline: none;
 }
+
+.btn.submit-btn {
+  background: #007af0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 6px;
+  transition: background 0.2s;
+}
+.btn.submit-btn:hover {
+  background: #005eb5;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 16px 2px;
+  }
+  #contact {
+    padding: 18px 6px;
+    max-width: 98vw;
+    box-shadow: 0 2px 8px #0001;
+  }
+}
+
 /*Footer Section*/
 .footer-social-icons {
   display: flex;
