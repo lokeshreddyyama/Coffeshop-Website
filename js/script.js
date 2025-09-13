@@ -48,3 +48,28 @@ const images = document.querySelectorAll(".menu-item img");
       if (e.key === "Escape") closeBtn.click();
     }
   });
+
+  /*EmailJs*/
+  function sendEmail() {
+  emailjs.init({
+  publicKey: '7XrwXhjTWbjENBLAr',
+});
+const name = document.getElementById("name").value.trim();
+const email = document.getElementById("email").value.trim();
+const phone = document.getElementById("phone").value.trim();
+const message = document.getElementById("message").value.trim();
+const params = {
+  from_name:name,
+  from_email:email,
+  from_phone:phone,
+  message:message,
+
+};
+emailjs.send("service_1bxb5li","template_qq1n1m8", params)
+.then(function() {
+  alert("Email sent!");
+})
+.catch(function() {
+   alert("Failed to sent!");
+});
+}

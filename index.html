@@ -9,6 +9,11 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"/>
      <!--Custom Css Link-->
     <link rel="stylesheet" href="./css/style.css">
+     <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
 </head>
 <body>
     <div class="container">
@@ -90,6 +95,7 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
   <span class="next">&#10095;</span>
 </div>
 
+<!--Service Section-->
     <section class="services" id="services">
     <div class="heading">
       <h1>Services</h1>
@@ -131,34 +137,32 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
 
 
 <!--Contact Section-->
-<div class="contact"><h1>Contact Us</h1></div>
-<section  id="contact" class="contact-section">
-<div class="paragraph"><p><br>➤ <b>lokeshreddy.1831151@gmail.com</b><br>📞<b> 9182512295</b></p></div>
-  <form>
+ <section id="container contact" class="contact">
+  
+  <form id="contact" novalidate style="flex: 0.7;">
+    <h2>Contact Me</h2>
+    <div class="paragraph"><p><br>➤ <b>lokeshreddy.1831151@gmail.com</b><br>📞<b> 9182512295</b></p></div>
     <div class="form-group">
-      <label><b>Full Name:</b></label>
-      <input type="text" placeholder="Enter your name" required>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name" required />
     </div>
     <div class="form-group">
-      <label><b>Email Id:</b></label>
-      <input type="email" placeholder="Enter email address" required>
+      <label for="email">Email Id:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
     </div>
-
     <div class="form-group">
-      <label><b>Phone No:</b></label>
-      <input type="tel" placeholder="e.g., 0123456789" required>
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" placeholder="e.g., 0123456789" required pattern="[0-9]{10}" />
     </div>
-
     <div class="form-group">
-      <label><b>Message:</b></label>
-      <textarea placeholder="Type your message..." rows="4" required></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
     </div>
-
-    <div class="btn">
-      <input type="submit" value="Submit">
-    </div>
+    <button type="button" class="btn submit-btn" onclick="sendEmail()">Submit</button>
   </form>
-</section><br>
+
+</section>
+<br>
 
 <!--Footer Section-->
 <footer>
