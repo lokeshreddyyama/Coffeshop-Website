@@ -7,11 +7,13 @@
 }
 
 body {
-  background: #f6f6f4;
+  background: #e0eadf;
   color: #333;
   line-height: 1.6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .container {
   width: 100%;
   margin: auto;
@@ -19,6 +21,7 @@ body {
   background: #0c0901;
 }
 
+/*navbar*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -67,6 +70,7 @@ nav ul li a:hover {
   display: none;
 }
 
+/*Responsive for Navbar*/
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -88,7 +92,7 @@ nav ul li a:hover {
   }
 }
 
-
+/*Banner Section*/
 .banner {
   padding: 100px 20px;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -130,9 +134,11 @@ nav ul li a:hover {
   color: #3e2723;
 }
 
+/*About Section*/
 .about {
   padding: 80px 20px;
   text-align: center;
+  background-color: transparent;
 }
 
 .about h1 {
@@ -165,9 +171,11 @@ nav ul li a:hover {
   background: #ffcc80;
   color: #3e2723;
 }
+
+/*Menu Section*/
 .Menu {
   padding: 40px 10px;
-  background: #070400;
+  background: #0d0a01;
   text-align: center;
 }
 
@@ -254,6 +262,7 @@ nav ul li a:hover {
 .lightbox .prev { top: 50%; left: 30px; }
 .lightbox .next { top: 50%; right: 30px; }
 
+/*Services Section*/
 .services {
   padding: 40px 10px;
   background: #0e0901;
@@ -297,16 +306,18 @@ nav ul li a:hover {
   margin: 15px 0 10px;
   color: #3e2723;
 }
+
+/*Vist Section*/
 .visit {
   text-align: center;
   padding: 60px 20px;
-  background: rgb(46, 30, 30)
+  background: #0d0a01;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .visit h2 {
   font-size: 2.2rem;
-  color: #2e1e0e;
+   color: #3e2723;
   margin-bottom: 40px;
   position: relative;
 }
@@ -354,6 +365,7 @@ nav ul li a:hover {
   line-height: 1.5;
 }
 
+/*Cards Section*/
 .contact {
   text-align: center;
    color: #3e2723;
@@ -365,7 +377,7 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-   background: #0d0a01;;
+   background: #0d0a01;
    color: rgb(239, 234, 234);
   width: 100%;
   margin: auto;
@@ -421,6 +433,7 @@ textarea {
   resize: none;
 }
 
+/*Button Section*/
 .btn {
   display: flex;
   justify-content: center;
@@ -441,6 +454,7 @@ textarea {
   background: #574fd6;
 }
 
+/*Footer Section*/
 .footer-social-icons {
   display: flex;
   justify-content: center;
@@ -486,7 +500,10 @@ text-decoration: none;
 footer {
   text-align: center; /* Center the text */
   padding: 20px 0;
+   background: #0e0901;
 }
+
+/*Responsive for Footer*/
 @media (max-width: 600px) {
   .footer-social-icons {
     flex-direction: row;
@@ -494,6 +511,8 @@ footer {
   }
 }
 
+/*Responsive for Contact Section*/
+@media (max-width: 600px) {
 @media (max-width: 780px) {
   .contact-section {
     flex-direction: column;
@@ -513,4 +532,5 @@ footer {
     font-size: 14px;
    max-width: 340px;
   }
+}
 }

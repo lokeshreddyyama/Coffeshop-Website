@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cofee Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!--fonts family link-->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"/>
+     <!--Custom Css Link-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
+
+      <!--Navbar Section-->
 <nav>
   <div class="logo"><b>Coffee Mug</b></div>
   <input type="checkbox" id="menu-toggle">
@@ -22,6 +26,8 @@
     <li><a href="#contact"><b>CONTACT US</b></a></li>
   </ul>
 </nav>
+
+<!--Banner Section-->
     <section class="banner" id="HOME">
 <h1><b>Start your day with coffee </b><br> </h1>
 <h4>Wake up and fuel your day with the perfect cup of coffee.  
@@ -35,6 +41,8 @@
 </form>
 </div>
 </section>
+
+<!--About Section-->
 <section class="about" id="ABOUT">
     <h1><b>About Us</b></h1>
     <h3><b>At Brew & Bliss, we believe that coffee is more than just a drink – it’s a way to connect, relax, and savor life’s little moments.
@@ -73,6 +81,7 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
       </div>
     </div>
   </section>
+
   <!-- Lightbox Popup -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
@@ -104,6 +113,8 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
       </div>
        </div>
   </section><br>
+
+  <!--Visit Section-->
   <section class="visit" id="visit">
   <h2>Visit Us</h2>
   <div class="visit-info">
@@ -118,6 +129,8 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
   </div>
 </section>
 
+
+<!--Contact Section-->
 <div class="contact"><h1>Contact Us</h1></div>
 <section  id="contact" class="contact-section">
 <div class="paragraph"><p><br>➤ <b>lokeshreddy.1831151@gmail.com</b><br>📞<b> 9182512295</b></p></div>
@@ -152,6 +165,8 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
     </div>
   </form>
 </section><br>
+
+<!--Footer Section-->
 <footer>
   <div class="footer-social-icons">
    <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -170,59 +185,7 @@ Whether you’re here for your morning espresso, an afternoon latte, or simply a
 </footer>
 </div>
     </div>
-   <script>
-  const images = document.querySelectorAll(".menu-item img");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".lightbox .close");
-  const prevBtn = document.querySelector(".lightbox .prev");
-  const nextBtn = document.querySelector(".lightbox .next");
-
-  let currentIndex = 0;
-
-  // Open lightbox
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => {
-      lightbox.style.display = "flex";
-      lightboxImg.src = img.src;
-      currentIndex = index;
-    });
-  });
-
-  // Close lightbox
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-  });
-
-  // Next image
-  nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    lightboxImg.src = images[currentIndex].src;
-  });
-
-  // Previous image
-  prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    lightboxImg.src = images[currentIndex].src;
-  });
-
-  // Close if clicked outside image
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = "none";
-    }
-  });
-
-  // Optional: use keyboard arrows
-  document.addEventListener("keydown", (e) => {
-    if (lightbox.style.display === "flex") {
-      if (e.key === "ArrowRight") nextBtn.click();
-      if (e.key === "ArrowLeft") prevBtn.click();
-      if (e.key === "Escape") closeBtn.click();
-    }
-  });
-</script>
-
-
+   <!--script Js-->
+   <script src="./js/script.js"></script>
 </body>
 </html>
