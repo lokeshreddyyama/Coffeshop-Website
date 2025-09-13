@@ -436,7 +436,7 @@ nav ul li a:hover {
 }
 
 .btn.submit-btn {
-  background: #007af0;
+  background: #12b6c8;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -473,6 +473,7 @@ nav ul li a:hover {
 
 .footer-social-icons a {
   margin: 0 10px;
+   color: #12b6c8;
 }
 .mn1 {
   display: flex;
