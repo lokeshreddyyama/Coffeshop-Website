@@ -380,7 +380,7 @@ nav ul li a:hover {
 }
 
 #contact {
-  background: #fff;
+  background: #0d0a01;
   border-radius: 10px;
   box-shadow: 0 2px 12px #0002;
   max-width: 750px;
@@ -395,14 +395,16 @@ nav ul li a:hover {
 #contact h2 {
   text-align: center;
   margin-bottom: 0;
-  font-size: 1.7rem;
+  font-size: 35px;
   letter-spacing: 1px;
+   color: #361d19;
 }
 
 .paragraph p {
   text-align: center;
   margin: 0;
   font-size: 1rem;
+  color: white;
 }
 
 .form-group {
@@ -415,6 +417,7 @@ nav ul li a:hover {
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 2px;
+  color:white;
 }
 
 .form-group input,
