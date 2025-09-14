@@ -144,7 +144,7 @@ nav ul li a:hover {
 .about h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #361d19;
+  color: #ffcc80;
 }
 
 .about h3 {
@@ -186,7 +186,7 @@ nav ul li a:hover {
 .Menu h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-   color: #361d19;
+   color: #ffcc80;
 }
 
 .menu-grid {
@@ -198,16 +198,16 @@ nav ul li a:hover {
   font-size: 20px;
 }
 .menu-item {
-  background: #07011c;
+   background: #0e0c0a;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 15px  #464215;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .menu-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  transform: translateY(0px);
+  box-shadow: 0 0px 25px  #8e7248;
 }
 
 .menu-item img {
@@ -278,7 +278,7 @@ nav ul li a:hover {
 .services h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-   color: #361d19;
+    color: #ffcc80;
 }
 
 .services h2 {
@@ -295,15 +295,16 @@ nav ul li a:hover {
 }
 
 .s-box {
-  background: #09021c;
+  background: #0e0c0a;
   padding: 30px 50px;
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+   box-shadow: 0 0px 15px  #464215;
   transition: transform 0.3s;
 }
 
 .s-box:hover {
   transform: translateY(-8px);
+   box-shadow: 0 0px 25px  #8e7248;
 }
 
 .s-box h3 {
@@ -321,7 +322,7 @@ nav ul li a:hover {
 
 .visit h2 {
   font-size: 2.2rem;
-   color: #361d19;
+   color: #ffcc80;
   margin-bottom: 40px;
   position: relative;
 }
@@ -397,7 +398,7 @@ nav ul li a:hover {
   margin-bottom: 0;
   font-size: 35px;
   letter-spacing: 1px;
-   color: #361d19;
+   color: #ffcc80;
 }
 
 .paragraph p {
@@ -436,7 +437,7 @@ nav ul li a:hover {
 }
 
 .btn.submit-btn {
-  background: #12b6c8;
+  background: #2b1b1b;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -448,7 +449,7 @@ nav ul li a:hover {
   transition: background 0.2s;
 }
 .btn.submit-btn:hover {
-  background: #005eb5;
+  background: #020012;
 }
 
 @media (max-width: 600px) {
@@ -468,12 +469,12 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 16px; /* Space below icons */
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .footer-social-icons a {
   margin: 0 10px;
-   color: #12b6c8;
+   color: #06606a;
 }
 .mn1 {
   display: flex;
