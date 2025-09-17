@@ -146,6 +146,16 @@ nav ul li a:hover {
   margin-bottom: 15px;
   color: #ffcc80;
 }
+.about h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: #3498db;
+  border-radius: 2px;
+}
+
 
 .about h3 {
   max-width: 850px;
@@ -188,6 +198,16 @@ nav ul li a:hover {
   margin-bottom: 40px;
    color: #ffcc80;
 }
+.Menu h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: #3498db;
+  border-radius: 2px;
+}
+
 
 .menu-grid {
   display: grid;
@@ -280,6 +300,16 @@ nav ul li a:hover {
   margin-bottom: 15px;
     color: #ffcc80;
 }
+.services h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: #3498db;
+  border-radius: 2px;
+}
+
 
 .services h2 {
   margin-bottom: 40px;
@@ -347,7 +377,7 @@ nav ul li a:hover {
 .info-card {
   background: #ffffff;
   padding: 25px 30px;
-  width: 260px;
+  width: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -400,6 +430,16 @@ nav ul li a:hover {
   letter-spacing: 1px;
    color: #ffcc80;
 }
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: #3498db;
+  border-radius: 2px;
+}
+
 
 .paragraph p {
   text-align: center;
@@ -474,7 +514,7 @@ nav ul li a:hover {
 
 .footer-social-icons a {
   margin: 0 10px;
-   color: #06606a;
+   color: #ffcc80;
 }
 .mn1 {
   display: flex;
@@ -496,7 +536,6 @@ text-decoration: none;
   transition: 0.3s;
   padding: 0px 30px;
 }
-
 .mn1 ul li a:hover {
   color: rgb(122, 88, 20);
 }
@@ -510,7 +549,8 @@ text-decoration: none;
 footer {
   text-align: center; /* Center the text */
   padding: 20px 0;
-   background: #0e0901;
+   background: #0d0904;
+   color: rgb(164, 135, 135);
 }
 
 /*Responsive for Footer*/
